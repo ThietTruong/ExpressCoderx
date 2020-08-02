@@ -1,0 +1,20 @@
+html  
+    head
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+    body
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            img(src="\\images/logoCodersx.jpg")
+            a.navbar-brand(href='/') Coderx.Tokyo
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarNavAltMarkup.collapse.navbar-collapse
+                .navbar-nav
+                a.nav-item.nav-link.active(href='/users')
+                    | Home 
+                    span.sr-only (current)
+                a.nav-item.nav-link(href='/users/create') Create User
+                a.nav-item.nav-link(href='#') Pricing
+                a.nav-item.nav-link.disabled(href='#') Disabled
+
+        .container.pt-5
+            block content
